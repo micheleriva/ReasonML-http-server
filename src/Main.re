@@ -3,7 +3,7 @@ module Http = {
   type server;
   type request;
   type response = {. [@bs.meth] "_end": string => unit};
-}
+};
 
 [@bs.module]
 external http : Http.lib = "http";
